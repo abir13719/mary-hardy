@@ -1,0 +1,9 @@
+/* about section */
+.about{
+    max-width: 1140px;
+    height: 550px;
+    border-radius: 10px;
+    background: #FFF8F3;
+    padding: 210px 150px;
+    margin: 150px auto;
+}
