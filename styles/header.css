@@ -62,10 +62,9 @@ header .banner {
   margin: 1% 0;
 }
 .banner .banner-descrip {
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 3.5rem;
+  font-weight: 500;
   color: var(--dark-font-color-3);
-  line-height: 3rem;
   margin: 1% 0 2% 0;
 }
 .w-btn-margin {
@@ -75,6 +74,8 @@ header .banner {
   width: fit-content;
   height: fit-content;
 }
+
+/* Medeia Quries for 1440px Device */
 
 @media (max-width: 1440px) {
   header {
@@ -98,12 +99,13 @@ header .banner {
   }
   .banner .banner-descrip {
     font-size: 2.2rem;
-    line-height: 2.2rem;
   }
   .profile-pic {
     width: 50%;
   }
 }
+
+/* Media Quries for 1024px Device */
 
 @media (max-width: 1024px) {
   header {
@@ -127,12 +129,13 @@ header .banner {
   }
   .banner .banner-descrip {
     font-size: 1.9rem;
-    line-height: 1.9rem;
   }
   .profile-pic {
     width: 50%;
   }
 }
+
+/* Media Quries for 768px Device */
 
 @media (max-width: 768px) {
   header {
@@ -156,12 +159,13 @@ header .banner {
   }
   .banner .banner-descrip {
     font-size: 1.6rem;
-    line-height: 1.6rem;
   }
   .profile-pic {
     width: 50%;
   }
 }
+
+/* Media Quries for Mobile Device */
 
 @media (max-width: 576px) {
   header {
@@ -199,7 +203,6 @@ header .banner {
   }
   .banner .banner-descrip {
     font-size: 1.5rem;
-    line-height: 1.5rem;
   }
   .profile-pic {
     order: 1;
