@@ -1,78 +1,208 @@
-header{
-    padding-left: 9%;
-    background-blend-mode: multiply;
-    background-color: #FFF8F3;
-    background-image: url(../images/header_bg.png), url(../images/developer.png);
-    background-repeat: no-repeat;
-    background-position: bottom right, 1% center;
+header {
+  padding-left: 9%;
+  background-blend-mode: multiply;
+  background-color: #fff8f3;
+  background-image: url(../images/header_bg.png), url(../images/developer.png);
+  background-repeat: no-repeat;
+  background-position: bottom right, 1.5% center;
 }
 
+/* Navigation styles */
 
-
-header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3% 0 0 0;
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 9% 0 0;
+  width: 100%;
 }
 
-
-
-header nav .nav-title{
-    color: #181818;
-    font-size: 60px;
-    font-weight: 800;
+header nav .nav-title {
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--dark-font-color-1);
 }
-.orange-text{
-    color: #FD6E0A;
+header nav .orange-text {
+  color: var(--styled-font-color-1);
 }
 
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 630px;
+  column-gap: 5%;
+}
+header nav li {
+  list-style-type: none;
+}
 
+/* Banner Styles */
 
-nav > ul{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    margin-right: 9%;
+header .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .banner-text {
+  max-width: 50%;
+}
+.banner-text .banner-greeting {
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--dark-font-color-2);
+  text-align: left;
+  margin: 1% 0;
+}
+.banner .banner-title {
+  font-size: 8.5rem;
+  font-weight: 700;
+  color: var(--dark-font-color-1);
+  text-align: left;
+  margin: 1% 0;
+}
+.banner .banner-descrip {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--dark-font-color-3);
+  line-height: 3rem;
+  margin: 1% 0 2% 0;
+}
+.w-btn-margin {
+  margin-left: 2%;
+}
+.profile-pic {
+  width: fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 1440px) {
+  header {
+    background-size: auto, contain;
+  }
+  header nav .nav-title {
+    font-size: 5rem;
+  }
+  header nav ul {
+    width: 460px;
     column-gap: 5%;
-}
-nav li{
-    list-style-type: none;
-}
-nav a{
-    text-decoration: none;
-    color: #474747;
-    font-size: 32px;
+  }
+  .banner .banner-text {
+    max-width: 60%;
+  }
+  .banner-text .banner-greeting {
+    font-size: 3.5rem;
+  }
+  .banner .banner-title {
+    font-size: 6.1rem;
+  }
+  .banner .banner-descrip {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+  .profile-pic {
+    width: 50%;
+  }
 }
 
-
-
-.banner{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+@media (max-width: 1024px) {
+  header {
+    background-size: 70%, contain;
+  }
+  header nav .nav-title {
+    font-size: 4rem;
+  }
+  header nav ul {
+    width: 400px;
+    column-gap: 5%;
+  }
+  .banner .banner-text {
+    max-width: 60%;
+  }
+  .banner-text .banner-greeting {
+    font-size: 2.9rem;
+  }
+  .banner .banner-title {
+    font-size: 5.7rem;
+  }
+  .banner .banner-descrip {
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+  }
+  .profile-pic {
+    width: 50%;
+  }
 }
-.banner .banner-text{
+
+@media (max-width: 768px) {
+  header {
+    background-size: 65%, contain;
+  }
+  header nav .nav-title {
+    font-size: 3.3rem;
+  }
+  header nav ul {
+    width: 320px;
+    column-gap: 4%;
+  }
+  .banner .banner-text {
+    max-width: 60%;
+  }
+  .banner-text .banner-greeting {
+    font-size: 2.5rem;
+  }
+  .banner .banner-title {
+    font-size: 4.4rem;
+  }
+  .banner .banner-descrip {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+  .profile-pic {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding-left: 0%;
+    background-image: none, none;
+  }
+  header nav {
+    display: block;
     max-width: 500px;
-}
-.banner .banner-greeting{
-    color: #474747;
-    font-size: 45px;
-    font-weight: 600;
-}
-.banner .banner-title{
-    color: #181818;
-    font-size: 85px;
-    font-weight: 700;
-}
-.banner .profile-pic{
-    width: 584px;
-    height: 676px;
-}
-.banner p{
-    color: #757575;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
+    margin: 0 auto;
+    padding: 3%;
+  }
+  header nav .nav-title {
+    display: none;
+  }
+  header nav ul {
+    justify-content: center;
+    width: 100%;
+  }
+  header .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner .banner-text {
+    max-width: 90%;
+    order: 2;
+  }
+  .banner-text .banner-greeting {
+    font-size: 2.5rem;
+  }
+  .banner .banner-title {
+    font-size: 4.2rem;
+  }
+  .banner .banner-descrip {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .profile-pic {
+    order: 1;
+    width: 90%;
+  }
 }

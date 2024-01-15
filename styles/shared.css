@@ -1,34 +1,80 @@
-*{
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+:root {
+  font-size: 62.5%;
+  --dark-font-color-1: #181818;
+  --dark-font-color-2: #474747;
+  --dark-font-color-3: #757575;
+  --white-font-color-1: #fff;
+  --styled-font-color-1: #fd6e0a;
+  --styled-bg-color-1: #fd6e0a;
 }
-header, main, footer{
-    max-width: 2560px;
-    margin: 0 auto;
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 1.6rem;
+}
+header,
+main,
+footer {
+  max-width: 2560px;
+  margin: 0 auto;
+}
+.orange-btn {
+  text-wrap: nowrap;
+  text-align: center;
+  color: var(--white-font-color-1);
+  font-size: 3.2rem;
+  padding: 1.6rem 3.2rem;
+  border: 1px solid #fd6e0a;
+  border-radius: 5px;
+  background-color: var(--styled-font-color-1);
+  cursor: pointer;
+}
+.white-btn {
+  text-wrap: nowrap;
+  text-align: center;
+  color: var(--styled-font-color-1);
+  font-size: 3.3rem;
+  font-weight: 700;
+  padding: 1.6rem 3.2rem;
+  border: 1px solid #fd6e0a;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.orange-btn{
-    text-wrap: nowrap;
-    text-align: center;
-    color: #FFF;
-    font-size: 32px;
-    padding: 16px 32px;
-    border: 1px solid #FD6E0A;
-    border-radius: 5px;
-    background-color: #FD6E0A;
-    cursor: pointer;
+@media (max-width: 1440px) {
+  .orange-btn {
+    font-size: 2.2rem;
+    padding: 1.2rem 2.2rem;
+  }
+  .white-btn {
+    font-size: 2.2rem;
+    padding: 1.2rem 2.2rem;
+  }
 }
-.white-btn{
-    text-wrap: nowrap;
-    text-align: center;
-    color: #FD6E0A;
-    font-size: 32px;
-    font-weight: 700;
-    padding: 16px 32px;
-    border: 1px solid #FD6E0A;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
+
+@media (max-width: 1024px) {
+  .orange-btn {
+    font-size: 1.8rem;
+    padding: 1rem 1.8rem;
+  }
+  .white-btn {
+    font-size: 1.8rem;
+    padding: 1rem 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .orange-btn {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+  }
+  .white-btn {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+  }
 }
